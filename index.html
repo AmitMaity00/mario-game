@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mario Mini Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Game Screen -->
+  <div class="game-container">
+    <div id="mario"></div>
+    <div id="obstacle"></div>
+    <div id="obstacle2"></div>
+    <div id="score">00000</div>
+  </div>
+
+  <!-- Game Over Section -->
+  <div class="end-text" hidden id="game-over-container">
+    <h1 id="game-over">Game Over!</h1>
+    <p id="creator">Created by Amit Bhai</p>
+  </div>
+
+  <!-- Music Toggle Button -->
+  <button id="music-toggle">🔊 Music: ON</button>
+
+  <!-- Audio -->
+  <audio id="jump-sound" src="jump.mp3"></audio>
+  <audio id="gameover-sound" src="gameover.mp3"></audio>
+  <audio id="bgm" src="bgm.mp3" loop autoplay></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
